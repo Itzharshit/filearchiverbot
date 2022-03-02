@@ -41,20 +41,17 @@ class Msg:
 
     def start(msg: Message) -> str:
         """ return start-message text """
-        txt = f"[‏](https://github.com/M100achuz2/archive-bot.git)היי {msg.from_user.mention}!\n" \
-              "באמצעות בוט זה תוכלו לדחוס קבצים לארכיון. שלחו /zip, ופעלו על פי ההוראות." \
-              "\n\nרובוט זה נוצר על ידי [Yeuda-By](t.me/m100achuzBots) מצוות [רובוטריק](t.me/robottrick)." \
-              "\nלקוד המקור [לחצו כאן](https://github.com/M100achuz2/archive-bot)."
+        txt = f"Hii,/n I am file archiver bot, I can zip Your Files within telegram./nJust send me your file and wait for downloading, after that send /stopzip to starting archiving your file."
         return txt
 
-    zip = "שלחו את הקבצים שהנכם רוצים לדחוס, ובסיום שלחו /stopzip לאחר שכל הקבצים ירדו. \n`הבוט תומך בקבצים עד 20mb, " \
-          "ועד 20 קבצים לארכיון אחד.` "
-    too_big = "הקובץ גדול מידי ):"
-    too_much = "ניתן לדחוס עד 20 קבצים בלבד."
-    send_zip = "השתמשו בפקודת /zip בשביל לדחוס קבצים (:"
-    zipping = "מתחיל בדחיסת {} קבצים..."
-    uploading = "מעלה ארכיון..."
-    unknow_error = "התרחשה שגיאה לא ידועה. \nשים לב לסדר הפעולות, ניתן להתחיל מחדש על ידי שליחת /start. \nבדוק אם " \
-                   "שלחת קבצים לדחיסה, ואם חיכית שכולם ירדו. \nבבקשה שלח זה למפתח:\n ```{}``` "
-    downloading = "מוריד קובץ:"
-    zero_files = "לא נשלחו קבצים."
+    zip = "Send the files you want to compress, and at the end send / stopzip after all the files have been downloaded."
+          "Only 20 files upto 20 mb are allowed."
+    too_big = "File are too much big."
+    too_much = "Only 20 files are allowed once."
+    send_zip = "Use the / zip command to compress files."
+    zipping = "Processing please wait {}..."
+    uploading = "📤 Uploading..."
+    unknow_error = "Oops! An error occurred, please report in support group. "
+   
+    downloading = "📥 Downloading..."
+    zero_files = "❌ No Files were sent."
