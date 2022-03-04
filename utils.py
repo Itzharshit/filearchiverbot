@@ -33,7 +33,7 @@ def list_dir(uid: int) -> list:
 
 def up_progress(current, total, msg: Message):
     """ edit status-msg with progress of the uploading """
-    msg.edit(f"**התקדמות ההעלאה: {current * 100 / total:.1f}%**")
+    msg.edit(f"**⏳ Uploading...: {current * 100 / total:.1f}%**")
 
 
 # ========= MSG class =========
